@@ -1,0 +1,13 @@
+# ninja log v6
+4	103	7860316652811745	CMakeFiles/assembler.dir/main.c.obj	b76ae1db0a283b63
+86	213	7860340240167656	assembler.exe	d901737ce13f75c4
+2	302	7864158188938791	build.ninja	447f4ce08a92c638
+12	76	7860340239387804	CMakeFiles/assembler.dir/task2.S.obj	ca847656290e1cba
+17	78	7860340239477808	CMakeFiles/assembler.dir/task3.S.obj	f3d549872e965ccc
+5	77	7860340239387804	CMakeFiles/assembler.dir/task1.S.obj	e20a34b5afea6f9f
+22	85	7860340239536543	CMakeFiles/assembler.dir/task4.S.obj	280fd84df28c7dc
+3	156	7864160719360386	CMakeFiles/assembler.dir/task1.S.obj	e20a34b5afea6f9f
+12	186	7864160719442150	CMakeFiles/assembler.dir/task2.S.obj	ca847656290e1cba
+104	186	7864160720370191	CMakeFiles/assembler.dir/task3.S.obj	f3d549872e965ccc
+111	187	7864160720443297	CMakeFiles/assembler.dir/task4.S.obj	280fd84df28c7dc
+187	422	7864160721194403	assembler.exe	d901737ce13f75c4
