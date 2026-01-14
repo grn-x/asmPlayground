@@ -3,12 +3,15 @@
 This workspace contains asm solutions to tasks originally designed for the ["Minimaschine"](https://www.schule.awiedemann.de/minimaschine.htm), a simplified educational CPU simulator.
 These tasks were given as part of this years cs class. My contribution here is merely the conversion of the curriculum-based pseudo code into actual assembly.
 
+Edit: As of 14.01. this project is being extended by some additional cases. 
+
 
 ## Assembly Specifications
 
 
-This project uses `x86-64` assembly with `AT&T` syntax, running on Windows (shame on me). Im assembling with GNU, and we’re working with 32-bit integers `.long`. 
-For registers, you’ll see the usual suspects like `%eax` and `%ebx`. Platform dependence wise the syscall `$0x80` with `eax=1` handles program termination.
+This project uses `x86-64` assembly with `AT&T` syntax, running on Windows (shame on me).
+Im assembling with GNU (GAS), we’re working with 32-bit integers `.long` and using RIP-relative addressing.
+For registers, you’ll see the usual suspects like `%eax` and `%ebx`.
 
 ## Tasks
 
@@ -205,15 +208,17 @@ Each task is modularized into its own assembly file, `taskX.S`, and is loaded by
 
 ### Build
 
-1. Ensure you have `gcc` and `as` installed.
+1. Ensure you have `gcc` (+ `as`) installed.
 2. Use the provided `CMakeLists.txt` to build the project:
    ```shell
-   mkdir build && cd build
-   cmake ..
-   make
+   mkdir build
+   cd build
+   cmake -G "MinGW Makefiles" ..
+   mingw32-make
    ```
-3. Run the executable:
+3. Run either of the executables found in the build dir:
    ```shell
-   ./assembler
+   ./assembler.exe
+   ./Additional/additional.exe
    ```
 

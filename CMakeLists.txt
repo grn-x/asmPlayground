@@ -12,3 +12,4 @@ add_executable(assembler
         task3.S
         task4.S
 )
+add_subdirectory(Additional)
